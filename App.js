@@ -65,11 +65,6 @@ export default class App extends Component {
         <ApolloProvider client={client}>
           <Navigator />
         </ApolloProvider>
-
-        // <View style={styles.container}>
-        //   {Platform.OS === 'ios' && <StatusBar barStyle="default" />}
-        //   <AppNavigator />
-        // </View>
       );
     }
   }
