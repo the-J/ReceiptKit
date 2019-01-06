@@ -9,7 +9,7 @@ import { graphql, withApollo } from 'react-apollo';
 import gql from 'graphql-tag';
 
 import HomeScreen from '../screens/HomeScreen';
-// import Login from './components/user/Login';
+import Login from '../components/user/Login';
 
 
 const HomeStack = createStackNavigator({
@@ -45,13 +45,13 @@ const userQuery = gql`
     user {
       id
       email
-      posts(orderBy: createdAt_ASC) {
-        id
-        title
-      }
     }
   }
 `;
+// posts(orderBy: createdAt_ASC) {
+//   id
+//   title
+// }
 
 
 const NavWrapper = ({ loading, user }) => {

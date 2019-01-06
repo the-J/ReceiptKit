@@ -193,7 +193,7 @@ import { MonoText } from '../components/StyledText';
 
 // import { signOut } from './utils/util-login.js';
 
-import navStyles from './styles/navStyles';
+import navStyles from '../styles/navStyles';
 
 export default class Home extends Component {
     static navigationOptions = { title: 'Home', ...navStyles };
